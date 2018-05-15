@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--<include layout="@layout/activity_base_title" />-->
+    <RelativeLayout
+        android:id="@+id/rl_home_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#40000000"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm040"/>
+            <include layout="@layout/activity_base_title_trans"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/srl_home">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/linear_home_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm070">
+
+        <LinearLayout
+            android:id="@+id/linear_home_roomtem"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dm020"
+                android:gravity="center"
+                android:text="室内"
+                android:textColor="@color/homeText"
+                android:textSize="@dimen/dm032" />
+
+            <TextView
+                android:id="@+id/text_home_roomtem"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dm015"
+                android:gravity="center"
+                android:text="0℃"
+                android:textColor="@color/homeText"
+                android:textSize="@dimen/dm032" />
+
+            <ImageView
+                android:layout_width="@dimen/dm001"
+                android:layout_height="@dimen/dm055"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dm015"
+                android:layout_marginLeft="@dimen/dm015"
+                android:background="@color/colorTexts" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_home_outsidetem"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dm015"
+                android:gravity="center"
+                android:text="室外"
+                android:textColor="@color/homeText"
+                android:textSize="@dimen/dm032" />
+
+            <TextView
+                android:id="@+id/text_home_outsidetem"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dm015"
+                android:gravity="center"
+                android:text="0℃"
+                android:textColor="@color/homeText"
+                android:textSize="@dimen/dm032" />
+
+            <ImageView
+                android:layout_width="@dimen/dm001"
+                android:layout_height="@dimen/dm055"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dm015"
+                android:layout_marginLeft="@dimen/dm015"
+                android:background="@color/colorTexts"></ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_home_weather"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_marginLeft="@dimen/dm015"
+                android:layout_width="@dimen/dm056"
+                android:layout_height="@dimen/dm038"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/img_home_weather"></ImageView>
+            <ImageView
+                android:layout_marginLeft="@dimen/dm100"
+                android:layout_gravity="center_vertical"
+                android:layout_width="@dimen/dm014"
+                android:layout_height="@dimen/dm025"
+                android:src="@drawable/img_home_arrows"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_home_surface"
+        android:layout_below="@+id/linear_home_title"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dm015"
+        android:layout_marginRight="@dimen/dm015"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

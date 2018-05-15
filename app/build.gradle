@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.base.project"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    signingConfigs {
+        debug {
+            storeFile file('project.jks')
+            storePassword "lchtime"
+            keyAlias "project"
+            keyPassword "lchtime"
+        }
+    }
+
+    /*sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }*/
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile project(':mylibrary')
+    compile files('libs/SocialSDK_QQ_Simplify.jar')
+    compile files('libs/SocialSDK_Sina_Simplify.jar')
+    compile files('libs/SocialSDK_WeChat_Simplify.jar')
+    compile files('libs/umeng_shareboard_widget.jar')
+    compile files('libs/umeng_social_api.jar')
+    compile files('libs/umeng_social_net.jar')
+    compile files('libs/umeng_social_shareboard.jar')
+    compile files('libs/umeng_social_shareview.jar')
+    compile files('libs/umeng_social_tool.jar')
+    compile project(':utilslibrary')
+    compile files('libs/Msc.jar')
+    compile files('libs/Sunflower.jar')
+    compile files('libs/mqtt-client-1.9.jar')
+    compile files('libs/hawtdispatch-transport-1.20.jar')
+    compile files('libs/hawtdispatch-scala-1.20.jar')
+    compile files('libs/hawtdispatch-1.20.jar')
+    compile files('libs/hawtbuf-proto-1.10.jar')
+    compile files('libs/commons-logging-1.2.jar')
+    compile files('libs/hawtbuf-1.10.jar')
+    compile files('libs/commons-lang3-3.1.jar')
+    compile files('libs/apollo-mqtt-1.7.1.jar')
+    compile 'com.carlos.voiceline:mylibrary:1.0.6'
+    compile 'com.android.support:appcompat-v7:25.1.1'
+    compile 'com.android.support:design:25.1.1'
+    compile 'com.android.support:recyclerview-v7:25.1.1'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    compile 'com.zhy:okhttputils:2.6.2'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.github.LuckSiege.PictureSelector:picture_library:v2.0.7'
+    compile 'jp.wasabeef:glide-transformations:2.0.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.3'
+
+}

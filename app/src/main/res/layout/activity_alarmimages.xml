@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nomarlBg"
+    android:id="@+id/ll_myself_information_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_base_title" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_house_manager_flour"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dm010"
+        android:layout_marginLeft="@dimen/dm015"
+        android:layout_marginRight="@dimen/dm015"
+        >
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

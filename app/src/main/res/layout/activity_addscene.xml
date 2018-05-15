@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_myself_information_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/temcolorback"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_base_title" />
+
+    <RelativeLayout
+        android:id="@+id/lineat_add_hint"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm080"
+        android:layout_marginLeft="@dimen/dm020"
+        android:layout_marginRight="@dimen/dm020"
+        android:layout_marginTop="@dimen/dm020"
+        android:background="@drawable/backgroud_normal_white"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dm020"
+            android:text="情景名称"
+            android:textColor="@color/textblack"
+            android:textSize="@dimen/dm028" />
+
+        <EditText
+            android:id="@+id/edit_add_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dm020"
+            android:gravity="right"
+            android:background="@null"
+            android:hint="请输入名称..."
+            android:textColor="@color/textblack"
+            android:textColorHint="@color/bgBlack"
+            android:textSize="@dimen/dm028" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lineat_add_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm080"
+        android:layout_marginLeft="@dimen/dm020"
+        android:layout_marginRight="@dimen/dm020"
+        android:layout_marginTop="@dimen/dm010"
+        android:background="@drawable/backgroud_normal_white"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dm020"
+            android:text="情景图标"
+            android:textColor="@color/textblack"
+            android:textSize="@dimen/dm028" />
+
+        <LinearLayout
+            android:id="@+id/linear_pattern_right"
+            android:layout_width="@dimen/dm180"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/image_add_hint"
+                android:layout_width="@dimen/dm036"
+                android:layout_height="@dimen/dm035"
+                android:layout_marginRight="@dimen/dm015"
+                android:src="@drawable/img_house_pattern" />
+
+            <ImageView
+                android:layout_width="@dimen/dm018"
+                android:layout_height="@dimen/dm035"
+                android:layout_marginRight="@dimen/dm020"
+                android:src="@drawable/img_pattern_right" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dm040"
+        android:layout_marginTop="@dimen/dm030"
+        android:text="执行任务"
+        android:textColor="@color/textblack"
+        android:textSize="@dimen/dm028" />
+
+    <RelativeLayout
+        android:id="@+id/lineat_execute_hint"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm080"
+        android:layout_marginLeft="@dimen/dm020"
+        android:layout_marginRight="@dimen/dm020"
+        android:layout_marginTop="@dimen/dm020"
+        android:background="@drawable/backgroud_normal_white"
+
+        >
+
+        <ImageView
+            android:id="@+id/img_add_pattern"
+            android:layout_width="@dimen/dm035"
+            android:layout_height="@dimen/dm035"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dm020"
+            android:src="@drawable/img_pattern_add" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dm020"
+            android:layout_toRightOf="@+id/img_add_pattern"
+            android:text="添加执行任务"
+            android:textColor="@color/textblack"
+            android:textSize="@dimen/dm028" />
+
+        <ImageView
+            android:layout_width="@dimen/dm018"
+            android:layout_height="@dimen/dm035"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dm020"
+            android:src="@drawable/img_pattern_right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    <!--<com.base.project.view.MyScrollview-->
+        <!--android:scrollbars="none"-->
+        <!--android:layout_marginTop="@dimen/dm010"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:visibility="gone"
+                android:id="@+id/rv_house_pattern"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/dm020"
+                android:layout_marginRight="@dimen/dm020"
+                >
+            </android.support.v7.widget.RecyclerView>
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/lineat_add_facility"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm080"
+                android:layout_marginLeft="@dimen/dm020"
+                android:layout_marginRight="@dimen/dm020"
+                android:layout_marginTop="@dimen/dm010"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                android:background="@drawable/backgroud_normal_white"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:text="继续添加"
+                    android:textColor="@color/colorTitle"
+                    android:textSize="@dimen/dm028" />
+            </RelativeLayout>
+        </LinearLayout>
+    <!--</com.base.project.view.MyScrollview>-->
+    </RelativeLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm080"
+        android:layout_marginTop="@dimen/dm030"
+        android:layout_marginLeft="@dimen/dm020"
+        android:layout_marginRight="@dimen/dm020"
+        android:layout_marginBottom="@dimen/dm020"
+        android:gravity="center"
+        android:id="@+id/ll_parrrent_quit"
+        android:background="@drawable/backgroud_normal_white"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除情景"
+            android:layout_marginLeft="@dimen/dm020"
+            android:textColor="@color/quitRed"
+            android:textSize="@dimen/dm026"/>
+    </LinearLayout>
+</LinearLayout>

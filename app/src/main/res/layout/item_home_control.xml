@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dm246"
+
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/telative_home_light"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroud_home_close"
+        >
+
+        <LinearLayout
+            android:id="@+id/img_home_more"
+            android:layout_width="@dimen/dm141"
+            android:layout_height="@dimen/dm070"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:paddingLeft="@dimen/dm025"
+            android:paddingRight="@dimen/dm025"
+            android:paddingTop="@dimen/dm025">
+
+            <ImageView
+                android:layout_width="@dimen/dm041"
+                android:layout_height="@dimen/dm011"
+                android:src="@drawable/img_home_more" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_light_close"
+            android:layout_width="@dimen/dm081"
+            android:layout_height="@dimen/dm068"
+            android:layout_below="@+id/img_home_more"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/img_light_close" />
+
+        <TextView
+            android:id="@+id/text_light_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_above="@+id/text_light_onoff"
+            android:layout_marginLeft="@dimen/dm025"
+            android:text="客厅灯"
+            android:textColor="@color/homeText"
+            android:textSize="@dimen/dm024" />
+
+        <TextView
+            android:id="@+id/text_light_onoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+           android:layout_marginBottom="@dimen/dm020"
+            android:layout_marginLeft="@dimen/dm025"
+            android:text="离线"
+            android:textColor="@color/homeText"
+            android:textSize="@dimen/dm024" />
+    </RelativeLayout>
+</LinearLayout>

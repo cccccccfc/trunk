@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud_normal_white"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dm025"
+        android:layout_marginTop="@dimen/dm030"
+        android:text="提示"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/dm034"/>
+    <TextView
+        android:id="@+id/tv_invite_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dm040"
+        android:layout_marginRight="@dimen/dm040"
+        android:textSize="@dimen/dm024"
+        android:textColor="@color/colorText"/>
+    <TextView
+        android:id="@+id/tv_invite_confirm"
+        android:layout_marginTop="@dimen/dm040"
+        android:layout_marginBottom="@dimen/dm020"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/colorTitle"
+        android:textSize="@dimen/dm030"/>
+</LinearLayout>

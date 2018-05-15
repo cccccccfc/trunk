@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm040" />
+
+    <include layout="@layout/activity_base_title_trans" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm001"
+        android:background="@color/thinWhite" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_myself"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_myself_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dm055"
+                android:layout_marginLeft="@dimen/dm035"
+                android:layout_marginRight="@dimen/dm035"
+                android:layout_marginTop="@dimen/dm045"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rl_myself_img"
+                    android:layout_width="@dimen/dm172"
+                    android:layout_height="@dimen/dm172"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/backgroud_myself_img">
+
+                    <ImageView
+                        android:id="@+id/iv_myself_img"
+                        android:layout_width="@dimen/dm160"
+                        android:layout_height="@dimen/dm160"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dm020"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_myself_nickname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/dm044" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dm016"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="查看或编辑个人资料"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/dm028" />
+
+                            <ImageView
+                                android:layout_width="@dimen/dm017"
+                                android:layout_height="@dimen/dm030"
+                                android:src="@drawable/icon_right_jiantou" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/dm020"
+                android:layout_marginLeft="@dimen/dm035"
+                android:layout_marginRight="@dimen/dm035"
+                android:layout_weight="1"
+                android:background="@drawable/backgroud_myself_listview"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dm035"
+                android:paddingRight="@dimen/dm035">
+
+                <LinearLayout
+                    android:id="@+id/ll_myself_home_ad"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm090"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dm040"
+                        android:layout_height="@dimen/dm037"
+                        android:src="@drawable/img_myself_home" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm027"
+                        android:text="家庭管理"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/dm032" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_myself_home_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorTextShallow"
+                        android:textSize="@dimen/dm022" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm001"
+                    android:background="@color/bgBlack" />
+
+                <LinearLayout
+                    android:id="@+id/ll_myself_sb"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm090"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dm040"
+                        android:layout_height="@dimen/dm037"
+                        android:src="@drawable/img_myself_sb" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm027"
+                        android:text="设备联动"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/dm032" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm001"
+                    android:background="@color/bgBlack" />
+
+                <LinearLayout
+                    android:id="@+id/ll_myself_pattern"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm090"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dm040"
+                        android:layout_height="@dimen/dm037"
+                        android:src="@drawable/img_myself_pattern" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm027"
+                        android:text="情景模式"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/dm032" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm001"
+                    android:background="@color/bgBlack" />
+                <LinearLayout
+                    android:id="@+id/ll_myself_advise"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm090"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dm040"
+                        android:layout_height="@dimen/dm037"
+                        android:src="@drawable/img_myself_advise" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm027"
+                        android:text="建议反馈"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/dm032" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm001"
+                    android:background="@color/bgBlack" />
+
+                <LinearLayout
+                    android:id="@+id/ll_myself_we"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm090"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dm040"
+                        android:layout_height="@dimen/dm037"
+                        android:src="@drawable/img_myself_we" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm027"
+                        android:text="关于我们"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/dm032" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm001"
+                    android:background="@color/bgBlack" />
+
+                <LinearLayout
+                    android:id="@+id/ll_myself_shezhi"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm090"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dm040"
+                        android:layout_height="@dimen/dm037"
+                        android:src="@drawable/img_myself_shezhi" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm027"
+                        android:text="设置"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/dm032" />
+                </LinearLayout>
+
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/dm001"-->
+                    <!--android:background="@color/bgBlack" />-->
+            </LinearLayout>
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

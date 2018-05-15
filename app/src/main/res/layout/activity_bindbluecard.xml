@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/temcolorback"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_base_title"/>
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="@dimen/dm080">
+        <TextView
+            android:layout_marginLeft="@dimen/dm050"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/dm028"
+            android:text="手环识别码"
+            />
+        <EditText
+            android:id="@+id/edit_bind"
+            android:background="@null"
+            android:layout_weight="1"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入手环识别码"
+            android:textSize="@dimen/dm028"
+            android:textColor="@color/textblack"
+            android:textColorHint="@color/bgBlack"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/texe_bind"
+        android:layout_marginTop="@dimen/dm015"
+        android:layout_marginLeft="@dimen/dm050"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dm010"
+        android:paddingBottom="@dimen/dm010"
+        android:paddingLeft="@dimen/dm030"
+        android:paddingRight="@dimen/dm030"
+        android:background="@drawable/backgroud_bg_white"
+        android:text="绑定"
+        android:textColor="@color/colorTextShallow"
+        android:textSize="@dimen/dm028"
+        />
+
+</LinearLayout>

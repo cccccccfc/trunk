@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#463226</color>
+    <color name="colorPrimaryDark">#463226</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorTitle">#dc8d04</color>
+    <color name="colorBackGroud">#463226</color>
+    <color name="colorText">#666666</color>
+    <color name="temcolorback">#33666666</color>
+    <color name="colorTexts">#40666666</color>
+    <color name="colorTextLine">#444444</color>
+    <color name="colorTextWhite">#cccccc</color>
+    <color name="colorTextShallow">#999999</color>
+    <color name="colorTextDeep">#333333</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="gray">#dbdbdb</color>
+    <color name="transWhite">#00000000</color>
+    <color name="thinWhite">#20ffffff</color>
+    <color name="nineWhite">#99ffffff</color>
+    <color name="bgBlack">#60000000</color>
+    <color name="nomarlBg">#e6e8f3</color>
+    <color name="quitRed">#dc0404</color>
+    <color name="colorNUll">#00ffffff</color>
+    <color name="control_color_onoff">#DC8D04</color>
+    <color name="homeText">#fffbd7</color>
+    <color name="myselfBg">#D5911D</color>
+    <color name="tempshinei">#00b46b</color>
+    <color name="textblack">#66000000</color>
+    <color name="black">#000000</color>
+</resources>

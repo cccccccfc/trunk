@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_pattern_background"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/dm015"
+    android:layout_height="@dimen/dm120"
+    android:layout_marginRight="@dimen/dm020"
+    android:layout_marginLeft="@dimen/dm020"
+    android:background="@drawable/img_nolight_rectangle"
+    >
+
+    <ImageView
+        android:id="@+id/iv_pattern_image"
+        android:layout_width="@dimen/dm049"
+        android:layout_height="@dimen/dm051"
+        android:layout_marginLeft="@dimen/dm020"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/img_pattern_closelight" />
+
+    <TextView
+        android:id="@+id/tv_pattern_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dm030"
+        android:text="情景模式"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/dm026" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" />
+    <TextView
+        android:id="@+id/img_pattern_switch"
+        android:layout_marginRight="@dimen/dm020"
+        android:paddingTop="@dimen/dm010"
+        android:paddingBottom="@dimen/dm010"
+        android:paddingLeft="@dimen/dm020"
+        android:paddingRight="@dimen/dm020"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/backgroud_button_app_transport"
+        android:text="编辑"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/dm026" />
+</LinearLayout>

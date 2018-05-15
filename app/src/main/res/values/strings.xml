@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">小益管家</string>
+
+    <string-array name="tab_titles">
+        <item>首页</item>
+        <item>我的</item>
+    </string-array>
+
+    <!--PullToRefreshLayout里面需要的string -->
+    <string name="head">这里是HeadView</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <!--服务器上传语音控制命令 -->
+    <string name="pushs">http://icadmin.lchtime.cn:8001/index.php/</string>
+    <string name="push_cmds">device/control/voicetoctrl</string>
+    <string name="text_hint_light">“打开/关闭卧室灯”,“打开/关闭卧室灯”,“打开/关闭卧室灯”,“打开/关闭卧室灯”</string>
+    <string name="text_hint_air">“打开/关闭空调”,“打开/关闭空调”,“打开/关闭空调”,“打开/关闭空调”</string>
+    <string name="text_hint_tv">“打开/关闭电视”,“打开/关闭电视”,“打开/关闭电视”,“打开/关闭电视”</string>
+    <string name="text_hint_curtain">“打开/关闭窗帘”,“打开/关闭窗帘”,“打开/关闭窗帘”,“打开/关闭窗帘”</string>
+    <string name="text_hint_sound">“打开/关闭音响”,“打开/关闭音响”,“打开/关闭音响”,“打开/关闭音响”</string>
+    <string name="text_hint_socket">“打开/关闭插座”,“打开/关闭插座”,“打开/关闭插座”,“打开/关闭插座”</string>
+    <string name="text_hint_stb">“打开/关闭机顶盒”,“打开/关闭机顶盒”,“打开/关闭机顶盒”,“打开/关闭机顶盒”</string>
+    <string name="text_hint_sensor">“打开/关闭传感器”,“打开/关闭传感器”,“打开/关闭传感器”,“打开/关闭传感器”</string>
+    <string name="text_hint_home">“这是语音首页的介绍”,“这是语音首页的介绍”,“这是语音首页的介绍”,“这是语音首页的介绍”</string>
+
+
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/temcolorback"
+    android:orientation="vertical"
+  >
+
+    <include layout="@layout/activity_base_title"/>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dm030"
+        android:layout_marginLeft="@dimen/dm036"
+        android:layout_marginRight="@dimen/dm036"
+        android:background="@drawable/backgroud_normal_white"
+        >
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dm015"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/dm028"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dm030"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="室内"
+                android:textColor="@color/colorText"
+                />
+            <ImageView
+                android:id="@+id/img_temp_more"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/img_temp_more"
+                android:layout_marginRight="@dimen/dm030"
+                android:layout_width="@dimen/dm040"
+                android:layout_height="@dimen/dm012"
+
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_temp_shinei"
+            android:layout_marginTop="@dimen/dm020"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="摄氏度"
+            android:textSize="@dimen/dm063"
+            android:textColor="@color/tempshinei"
+            />
+        <com.github.mikephil.charting.charts.HorizontalBarChart
+
+            android:id="@+id/temp_horizon_barchart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.github.mikephil.charting.charts.HorizontalBarChart>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/dm025"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/dm015"
+        android:layout_marginLeft="@dimen/dm036"
+        android:layout_marginRight="@dimen/dm036"
+        android:background="@drawable/backgroud_normal_white"
+        >
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dm015"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/dm028"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dm030"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="室外"
+                android:textColor="@color/colorText"
+                />
+            <ImageView
+                android:id="@+id/img_temp_more1"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/img_temp_more"
+                android:layout_marginRight="@dimen/dm030"
+                android:layout_width="@dimen/dm040"
+                android:layout_height="@dimen/dm012"
+
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_temp_shinei1"
+            android:layout_marginTop="@dimen/dm020"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="摄氏度"
+            android:textSize="@dimen/dm063"
+            android:textColor="@color/myselfBg"
+            />
+        <com.github.mikephil.charting.charts.HorizontalBarChart
+
+            android:id="@+id/temp_horizon_barchart1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.github.mikephil.charting.charts.HorizontalBarChart>
+
+
+    </LinearLayout>
+</LinearLayout>

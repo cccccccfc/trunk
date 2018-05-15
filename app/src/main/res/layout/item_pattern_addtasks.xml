@@ -1,0 +1,61 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/ll_equipment_open"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm100"
+        android:layout_marginTop="@dimen/dm010"
+        android:background="@drawable/backgroud_normal_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_equipment_open_door"
+            android:layout_width="@dimen/dm060"
+            android:layout_height="@dimen/dm051"
+            android:layout_marginLeft="@dimen/dm020"
+            android:src="@drawable/img_pattern_air" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm020"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_equipment_open_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开门开灯"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dm025" />
+
+            <TextView
+                android:id="@+id/iv_equipment_open_doo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm005"
+                android:text="解决"
+                android:textColor="@color/colorTextLine"
+                android:textSize="@dimen/dm022" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <CheckBox
+            android:layout_marginRight="@dimen/dm020"
+            android:id="@+id/img_pattern_switch"
+            style="@style/Pattern_CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="0.6"
+            android:scaleY="0.6" />
+    </LinearLayout>
+
+</LinearLayout>

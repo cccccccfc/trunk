@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.base.project">
+
+    <!-- 连接网络权限，用于执行云端语音能力 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取手机录音机使用权限，听写、识别、语义理解需要用到此权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 读取网络信息状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取当前wifi状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许程序改变网络连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 读取手机信息权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 读取联系人权限，上传联系人需要用到此权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 外存储写权限，构建语法需要用到此权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 外存储读权限，构建语法需要用到此权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 配置权限，用来记录应用配置信息 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 手机定位信息，用来为语义等功能提供定位，提供更精准的服务 -->
+    <!-- 定位信息是敏感信息，可通过Setting.setLocationEnable(false)关闭定位请求 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 如需使用人脸识别，还要添加：摄相头权限，拍照需要用到 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 友盟分享和登陆配置 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 友盟分享和登陆配置结束 -->
+    <!-- 地图包、搜索包需要的基础权限 -->
+    <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="90f3c382316ef661e62ade2f48d364a6" />
+
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivityTabHost"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.myself.ActivityMyselfInformation" />
+        <activity android:name=".activity.login.ActivityLogin" />
+        <activity android:name=".activity.login.ActivityRegister" />
+        <activity android:name=".activity.login.ActivityForget" />
+        <activity android:name=".activity.myself.ActivityHomeManager" />
+        <activity android:name=".activity.myself.ActivityHouseManager" />
+        <activity android:name=".activity.myself.ActivityCreateHome" />
+        <activity android:name=".activity.myself.ActivityCreateHouse" />
+        <activity android:name=".activity.myself.ActivityAboutUs" />
+        <activity android:name=".activity.myself.ActivitySystemInstall" />
+        <activity android:name=".activity.myself.ActivityAdviseBack" />
+        <activity android:name=".activity.login.ActivityChangePas" />
+        <activity android:name=".activity.myself.ActivityMemberAndPower" />
+        <activity android:name=".activity.myself.ActivityEquipment" />
+        <activity android:name=".activity.myself.ActivityModifyHouseName" />
+        <activity android:name=".activity.login.ActivityLoginCreateHome" />
+        <activity android:name=".activity.myself.ActivityAddMember" />
+        <activity android:name=".activity.myself.ActivityMemberInfo" />
+        <activity android:name=".activity.myself.ActivityJoinFamliy" />
+
+        <service android:name=".severs.HomeService" />
+        <service android:name="com.amap.api.location.APSService" />
+
+        <activity android:name=".activity.facility.ActivityCameraInfo" />
+        <activity android:name=".activity.VitamioVideoViewActivity" />
+
+        <!-- 友盟分享和登陆配置 -->
+        <!-- 新浪 -->
+        <activity
+            android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- QQ精简版 -->
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".wxapi.WBShareActivity" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5955c3f7aed1794d85000143" />
+        <!-- 友盟分享和登陆配置结束 -->
+
+        <activity android:name=".activity.voice.ActivityVoiceHome" />
+        <activity android:name=".activity.facility.ActivityControlTv" />
+        <activity android:name=".activity.facility.ActivityControlLight" />
+        <activity android:name=".activity.facility.ActivityControlAir" />
+        <activity android:name=".activity.facility.ActivityTemperature" />
+        <activity android:name=".activity.facility.ActivityControlCurtain" />
+        <activity android:name=".activity.facility.ActivityControlLightstrip" />
+        <activity android:name=".activity.facility.ActivityControlLock" />
+        <activity android:name=".activity.facility.ActivityControlBody" />
+        <activity android:name=".activity.facility.ActivityControlRobot" />
+        <activity android:name=".activity.facility.ActivityControlValve" />
+        <activity android:name=".activity.facility.ActivityControlTrend" />
+
+        <provider
+            android:name=".utils.CustomFileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".activity.myself.ActivityPattern" />
+        <activity android:name=".activity.myself.ActivityAddscene" />
+        <activity android:name=".activity.myself.ActivityAddTasks" />
+        <activity android:name=".activity.myself.ActivityAddImage" />
+        <activity android:name=".activity.facility.ActivityAlarmimages" />
+        <activity android:name=".activity.facility.ActivityBindbluecard" />
+        <activity android:name=".activity.facility.ActivityFacilityInfo" />
+        <activity android:name=".utils.PermissionActivity" />
+        <activity android:name=".activity.facility.ActivityIncidentbody"></activity>
+        <activity android:name=".activity.login.ActivityJoinFamily" />
+        <activity android:name=".activity.facility.ActivityIncidentRecord"></activity>
+    </application>
+
+</manifest>

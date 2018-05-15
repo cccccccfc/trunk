@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nomarlBg"
+    android:id="@+id/ll_myself_information_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_base_title" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/backgroud_bg_white_other"
+            android:layout_margin="@dimen/dm020"
+            android:layout_height="@dimen/dm065"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/dm030"
+                android:layout_height="@dimen/dm030"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dm025"
+                android:src="@drawable/icon_research"/>
+            <EditText
+                android:id="@+id/et_join_famliy"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="请输入管理员手机号"
+                android:textColorHint="@color/colorTextShallow"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dm018"
+                android:background="@null"
+                android:gravity="center_vertical|left"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/dm024"/>
+            <ImageView
+                android:id="@+id/iv_join_famliy"
+                android:layout_width="@dimen/dm026"
+                android:layout_height="@dimen/dm026"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dm025"
+                android:layout_marginLeft="@dimen/dm025"
+                android:src="@drawable/icon_delete_text"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_join_famliy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:layout_marginRight="@dimen/dm020"
+            android:textSize="@dimen/dm026"
+            android:layout_gravity="center"
+            android:textColor="@color/colorTextDeep"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_join_famliy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

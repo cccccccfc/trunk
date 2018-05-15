@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:voiceView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/img_voice_background"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/activity_base_title_trans" />
+
+    <TextView
+        android:id="@+id/isr_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dm120"
+        android:text="你可以这样说："
+        android:textColor="@color/colorTextWhite"
+        android:textSize="@dimen/dm042" />
+
+    <LinearLayout
+        android:id="@+id/text_layout_facility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/isr_text"
+        android:layout_marginLeft="@dimen/dm040"
+        android:layout_marginRight="@dimen/dm040"
+        android:layout_marginTop="@dimen/dm020"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rel_layout_light"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dm077"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="灯光"
+                android:textColor="@color/colorTextWhite"
+                android:textSize="@dimen/dm033" />
+
+            <ImageView
+                android:layout_width="@dimen/dm020"
+                android:layout_height="@dimen/dm033"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/img_voice_arrows" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm001"
+            android:background="@color/colorTextLine" />
+
+        <RelativeLayout
+            android:id="@+id/rel_layout_air"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dm077"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="空调"
+                android:textColor="@color/colorTextWhite"
+                android:textSize="@dimen/dm033" />
+
+            <ImageView
+                android:layout_width="@dimen/dm020"
+                android:layout_height="@dimen/dm033"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/img_voice_arrows" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm001"
+            android:background="@color/colorTextLine" />
+
+        <RelativeLayout
+            android:id="@+id/rel_layout_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dm077"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电视"
+                android:textColor="@color/colorTextWhite"
+                android:textSize="@dimen/dm033" />
+
+            <ImageView
+                android:layout_width="@dimen/dm020"
+                android:layout_height="@dimen/dm033"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/img_voice_arrows" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm001"
+            android:background="@color/colorTextLine" />
+
+        <RelativeLayout
+            android:id="@+id/rel_layout_curtain"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dm077"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="窗帘"
+                android:textColor="@color/colorTextWhite"
+                android:textSize="@dimen/dm033" />
+
+            <ImageView
+                android:layout_width="@dimen/dm020"
+                android:layout_height="@dimen/dm033"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/img_voice_arrows" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm001"
+            android:background="@color/colorTextLine" />
+
+        <RelativeLayout
+            android:id="@+id/rel_layout_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dm077"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="音响"
+                android:textColor="@color/colorTextWhite"
+                android:textSize="@dimen/dm033" />
+
+            <ImageView
+                android:layout_width="@dimen/dm020"
+                android:layout_height="@dimen/dm033"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/img_voice_arrows" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm001"
+            android:background="@color/colorTextLine" />
+
+        <RelativeLayout
+            android:id="@+id/rel_layout_socket"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dm077"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="插座"
+                android:textColor="@color/colorTextWhite"
+                android:textSize="@dimen/dm033" />
+
+            <ImageView
+                android:layout_width="@dimen/dm020"
+                android:layout_height="@dimen/dm033"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/img_voice_arrows" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm001"
+            android:background="@color/colorTextLine" />
+
+        <RelativeLayout
+            android:id="@+id/rel_layout_stb"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dm077"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="机顶盒"
+                android:textColor="@color/colorTextWhite"
+                android:textSize="@dimen/dm033" />
+
+            <ImageView
+                android:layout_width="@dimen/dm020"
+                android:layout_height="@dimen/dm033"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/img_voice_arrows" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm001"
+            android:background="@color/colorTextLine" />
+
+        <RelativeLayout
+            android:id="@+id/rel_layout_sensor"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dm077"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="传感器"
+                android:textColor="@color/colorTextWhite"
+                android:textSize="@dimen/dm033" />
+
+            <ImageView
+                android:layout_width="@dimen/dm020"
+                android:layout_height="@dimen/dm033"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/img_voice_arrows" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm001"
+            android:background="@color/colorTextLine" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/tec_text_hint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/isr_text"
+        android:layout_marginLeft="@dimen/dm040"
+        android:layout_marginRight="@dimen/dm040"
+        android:layout_marginTop="@dimen/dm020"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <com.carlos.voiceline.mylibrary.VoiceLineView
+        android:id="@+id/img_voice_lineview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm180"
+        android:animateLayoutChanges="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent"
+        android:visibility="gone"
+        voiceView:fineness="three"
+        voiceView:lineSpeed="120"
+        voiceView:middleLine="@android:color/transparent"
+        voiceView:middleLineHeight="19dp"
+        voiceView:sensibility="five"
+        voiceView:viewMode="line"
+        voiceView:voiceLine="@android:color/white" />
+
+    <TextView
+        android:id="@+id/text_hint_speek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/isr_lin"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dm155"
+        android:text="请说话"
+        android:textColor="@color/colorTextWhite"
+        android:textSize="@dimen/dm025" />
+
+    <RelativeLayout
+        android:id="@+id/isr_lin"
+        android:animateLayoutChanges="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dm025"
+        android:paddingLeft="@dimen/dm030"
+        android:paddingRight="@dimen/dm030">
+
+        <ImageView
+            android:id="@+id/img_voice_wildcard"
+            android:layout_width="@dimen/dm062"
+            android:layout_height="@dimen/dm062"
+            android:layout_alignBottom="@+id/img_voice_mic"
+            android:background="@drawable/img_voice_wildcard" />
+
+        <ImageView
+            android:id="@+id/img_voice_mic"
+            android:layout_width="@dimen/dm060"
+            android:layout_height="@dimen/dm086"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/img_voice_mic" />
+
+        <ImageView
+            android:id="@+id/img_voice_setting"
+            android:layout_width="@dimen/dm062"
+            android:layout_height="@dimen/dm062"
+            android:layout_alignBottom="@+id/img_voice_mic"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/img_voice_setting"
+            android:paddingLeft="@dimen/dm020" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_setting_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dm040"
+        android:layout_marginRight="@dimen/dm040"
+        android:layout_marginTop="@dimen/dm090"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm001"
+            android:background="@color/colorTextLine" />
+
+        <TextView
+            android:id="@+id/text_setting_rouse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="后台摇一摇唤醒"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="@dimen/dm034"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/img_setting_switch"
+            style="@style/Setting_CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleX="0.6"
+            android:scaleY="0.6" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm001"
+            android:layout_below="@+id/img_setting_switch"
+            android:layout_marginTop="@dimen/dm025"
+            android:background="@color/colorTextLine" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_setting_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_setting_layout"
+        android:layout_marginLeft="@dimen/dm040"
+        android:layout_marginRight="@dimen/dm040"
+        android:layout_marginTop="@dimen/dm022"
+        android:text="App在后台运行时，通过摇一摇手机唤醒语音助手"
+        android:textColor="@color/colorTextShallow"
+        android:textSize="@dimen/dm022"
+        android:visibility="gone" />
+</RelativeLayout>
